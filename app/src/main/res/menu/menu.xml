@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:title="Home"
+        android:id="@+id/home"
+        android:icon="@drawable/round_house_24"
+        app:cnb_textColor="#fff"/>
+    <item
+        android:title="Library"
+        android:id="@+id/library"
+        android:icon="@drawable/outline_library_books_24"
+        app:cnb_textColor="#fff"/>
+    <item
+        android:title="Classroom"
+        android:id="@+id/classroom"
+        android:icon="@drawable/round_local_phone_24"
+        app:cnb_textColor="#fff"/>
+    <item
+        android:title="Notifications"
+        android:id="@+id/notifications"
+        android:icon="@drawable/round_notifications_none_24"
+        app:cnb_textColor="#fff"/>
+    <item
+        android:title="Profile"
+        android:id="@+id/profile"
+        android:icon="@drawable/outline_account_circle_24"
+        app:cnb_textColor="#fff"/>
+</menu>
