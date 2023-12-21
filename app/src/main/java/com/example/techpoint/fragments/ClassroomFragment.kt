@@ -1,12 +1,15 @@
 package com.example.techpoint.fragments
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.EditText
+import android.widget.Toast
+import androidx.fragment.app.Fragment
 import com.example.techpoint.databinding.FragmentClassroomBinding
-import com.example.techpoint.databinding.FragmentNotificationBinding
+
 
 class ClassroomFragment : Fragment() {
 
@@ -23,6 +26,7 @@ class ClassroomFragment : Fragment() {
         // Inflate the layout for this fragment
         _binding = FragmentClassroomBinding.inflate(inflater,container,false)
 
+
         return binding.root
 
     }
@@ -31,5 +35,6 @@ class ClassroomFragment : Fragment() {
         super.onDestroyView()
         _binding = null
     }
+
 
 }
