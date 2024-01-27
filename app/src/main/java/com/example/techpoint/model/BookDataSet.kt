@@ -1,8 +1,8 @@
 package com.example.techpoint.model
 
-data class Course(
+data class BookDataSet(
     val title: String,
     val subtitle: String,
-    val imageResource: Int,
+    val imageResource: String,
     // другие данные
 )

@@ -7,17 +7,6 @@
     android:theme="@style/ThemeOverlay.TechPoint.FullscreenContainer"
     tools:context=".fragments.HomeFragment">
 
-    <!-- The primary full-screen view. This can be replaced with whatever view
-         is needed to present your content, e.g. VideoView, SurfaceView,
-         TextureView, etc. -->
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerView"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_margin="16dp" >
-
-    </androidx.recyclerview.widget.RecyclerView>
 
 
 </FrameLayout>
