@@ -8,12 +8,14 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
 import com.example.techpoint.databinding.CourseItemBinding
+import com.example.techpoint.listeners.BookOnClickListener
 import com.example.techpoint.model.BookDataSet
 
 
 class LibraryAdapter(
     private val context: Context,
-    private val cours: List<BookDataSet>) : RecyclerView.Adapter<LibraryAdapter.CourseViewHolder>() {
+    private val cours: List<BookDataSet>,
+    val bookOnClickListener: BookOnClickListener) : RecyclerView.Adapter<LibraryAdapter.CourseViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CourseViewHolder {
         val inflater = LayoutInflater.from(parent.context)
@@ -43,6 +45,10 @@ class LibraryAdapter(
                         .error(R.drawable.stat_notify_error) // Error image in case of loading failure
                 )
                 .into(binding.image)
+
+            binding.image.setOnClickListener {
+                bookOnClickListener.bookOnClick(it,cours[position])
+            }
         }
     }
 }

@@ -5,13 +5,13 @@
     android:layout_height="match_parent"
     android:background="#fbfdfb"
     android:theme="@style/ThemeOverlay.TechPoint.FullscreenContainer"
-    tools:context=".fragments.LibraryFragment">
+    tools:context=".navFragments.LibraryFragment">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/my_toolbar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:background="?attr/colorPrimary"
+        android:background="@drawable/bgactionbar"
         android:elevation="4dp"
         android:theme="@style/ThemeOverlay.AppCompat.ActionBar"/>
 
@@ -20,10 +20,6 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@+id/my_toolbar"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
         android:orientation="vertical">
 
     </androidx.recyclerview.widget.RecyclerView>

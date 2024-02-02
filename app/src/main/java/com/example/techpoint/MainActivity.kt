@@ -2,7 +2,7 @@ package com.example.techpoint
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.example.techpoint.fragments.*
+import com.example.techpoint.navFragments.*
 import com.ismaeldivita.chipnavigation.ChipNavigationBar
 
 
